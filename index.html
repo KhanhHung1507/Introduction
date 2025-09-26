@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Portfolio – Introspective Space</title>
+<link rel="stylesheet" href="CSS/mainstyle.css">
+<link rel="stylesheet" href="CSS/intro.css">
+</head>
+<body>
+
+<!-- INTRO OVERLAY -->
+<div id="intro" class="intro">
+  <div class="intro-center">
+    <!-- logo -->
+    <div class="logo">
+  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="80">
+    <!-- khung chữ nhật bao quanh -->
+    <rect x="10" y="20" rx="8" ry="8" width="180" height="40" 
+          fill="none" stroke="white" stroke-width="2"/>
+    <!-- chữ -->
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+          font-family="monospace" font-size="25" fill="white">Welcome</text>
+  </svg>
+</div>
+    <!-- code animation -->
+    <div class="code-window" aria-hidden="true">
+      <pre id="codeLines" class="code-lines"></pre>
+    </div>
+
+    <!-- progress bar -->
+    <div class="loader-wrap" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div id="loaderText" class="loader-text">Loading 0%</div>
+      <div class="loader-bar">
+        <div id="loaderProgress" class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- MAIN CONTENT (portfolio) -->
+  <nav>
+    <a href="ChildWeb/about.html">Về tôi</a>
+    <a href="ChildWeb/skills.html">Kỹ năng</a>
+    <a href="ChildWeb/portfolio.html">Dự án</a>
+    <a href="ChildWeb/contact.html">Liên hệ</a>
+    </nav>
+  <header>
+    <img src="images/avatar.jpg" alt="Ảnh đại diện">
+    <h1>Nguyễn Khánh Hưng</h1>
+    <p>Thử thách là cơ hội!</p>
+    <p>Challenges are opportunities!</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Xin chào 👋</h2>
+      <p>Đây là nơi mình chia sẻ hành trình, dự án và kỹ năng của mình</p>
+    </section>
+  </main>
+
+<script src="Javascript/mainscript.js" defer></script>  
+<script src="Javascript/intro.js" defer></script>
+</body>
+</html>
